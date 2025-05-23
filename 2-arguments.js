@@ -1,14 +1,14 @@
 
-const input = prompt("Say something:");
-let space = " ";    
-for (let i in input){
-    space += input[i];
-    if (i == undefined) {
+const args = process.argv.slice(2);
+let count = 0;
+for (const arg of args) {
+    count++;
+        }
+    if (count === 0) {
         console.log("No argument")}
     
-    else if ( space >= 1  ){
-        console.log("Arguments found")}
+    else if ( count === 1  ){
+        console.log("Argument found")}
     else {
-        console.log("Argument found")
+        console.log("Arguments found")
         }
-          }
