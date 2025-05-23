@@ -9,4 +9,4 @@ function add(a, b) {
 }
 
 if (!isNaN(num1) && !isNaN(num2)) {
-    add(firstArg, secondArg )}
+    add(num1, num2 )}
