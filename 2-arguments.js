@@ -1,7 +1,14 @@
 
 const input = prompt("Say something:");
-    if (input.length >=1) {
-        console.log("Argument found")}
+let space = " ";    
+for (let i in input){
+    space += input[i];
+    if (i == undefined) {
+        console.log("No argument")}
+    
+    else if ( space >= 1  ){
+        console.log("Arguments found")}
     else {
-        console.log("No argument")
+        console.log("Argument found")
         }
+          }
