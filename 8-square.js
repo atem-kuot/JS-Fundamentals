@@ -1,12 +1,12 @@
 const firstArg = process.argv[2];
 const num = parseInt(firstArg);
-let i = 0;
 
-while (num > i){
-if (!isNaN(num)) {
-    console.log("X".repeat(num));
-} else {
-    console.log('Missing size');
-}
-i++;
+if (isNaN(num)) {
+  console.log('Missing size');
+} else if (num > 0) {
+  let i = 0;
+  while (i < num) {
+    console.log('X'.repeat(num));
+    i++;
+  }
 }
