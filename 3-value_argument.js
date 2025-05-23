@@ -1,12 +1,16 @@
-const args = process.argv.slice(2);
-let count = 0;
+const args = process.argv.slice(2); 
+
+let hasArgument = false;
+let firstArg;
+
 for (const arg of args) {
-    count++;
-      }
-     
-    if (count === 0) {
-        console.log("No argument")}
-    
-    else {
-        console.log(argv)
-        }
+  firstArg = arg;
+  hasArgument = true;
+  break; 
+}
+
+if (hasArgument) {
+  console.log(firstArg);
+} else {
+  console.log('No argument');
+}
